@@ -1,0 +1,802 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+main{
+    position: absolute;
+    z-index: -1;
+    background-image: linear-gradient(180deg, #f1610d, #4c07cc);
+    border: solid;
+    width: 100%;
+    height:100vh;
+}
+/* .cidade{
+    background-image: url(skyline-1312444_960_720.webp); 
+    background-repeat:no-repeat;
+    background-size: 100%;
+    height: 99vh;
+} */
+ .rua{
+    position: absolute;
+    top:91.5%;
+    width: 99.99%;
+    height: 50px;
+    background-color: rgb(53, 51, 51);
+}
+.listras{ 
+    position: absolute;
+    top:35%;
+    width: 99%;
+    border-bottom: 10px dashed #ffffff; 
+} 
+.aviao{
+    position: absolute;
+    width: 15.5vw;
+    height: 8.5vh;
+    top:20vh;
+    left: 0.2vw;
+    background-color: white;
+    border-radius: 0px 0px 10px 100px;
+    animation: airplane 10s ease-in-out 0.1s infinite normal both;
+    transition: ease-in-out 0s;
+}
+@keyframes airplane {
+    0%{
+        left: 78%;
+        top: 100px;
+        transform: scale(-1,1);
+    }
+    50%{
+        left: 2%;
+        transform: scale(-1,1);
+        top: 210px;
+    }
+    55%{
+        top: 215px;
+    }
+    60%{
+        transform: scale(-1,1);
+        left: 2.1%;
+        top: 200px;
+    }
+    70%{
+        transform: scale(1,1);
+        left: 2.2%;
+        top: 190px;
+    }
+    90%{
+        top: 160px;
+        left: 75%;
+        transform:scale(1,1);
+    }
+    100%{
+        left:78% ;
+        transform: scale(-1,1);
+        top: 110px;
+    }
+    
+
+}
+.imageJp{
+    background-image: url(https://static.wixstatic.com/media/7e49b2_726ea1cb8c91444e87ad57305d789f3b~mv2.png/v1/fill/w_174,h_104,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/LOGO%20JP%20VAZADO%20letra%20branca.png);
+    position: absolute;
+    top: -8.5vh;
+    left:-0.1vw;
+    width:3vw ;
+    height: 5.5vh;
+    background-size:100%;
+    background-repeat: no-repeat;
+}
+.aviaoParte1{
+    position: absolute;
+    top:-4.5vh;
+    left:0vw;
+    width:15.5vw;
+    height:5vh;
+    background-color:white;
+    border-radius: 0px 100px 0px 0px;
+}
+.frenteAviao{
+    position: absolute;
+    top:1.1vh;
+    left:13.5vw;
+    width:3.3vw;
+    height: 7.5vh;
+    border-radius: 0px 10px 10px 0px;
+    background-color:white;
+}
+.frenteAviao2{
+    position: absolute;
+    top:2vh;
+    left: 15.5vw;
+    width: 2vw;
+    height: 5.5vh;
+    background-color:red;
+    border-radius: 0px 10px 10px 0px;
+    z-index: -1;
+}
+.asaAviao1{
+    position: relative;
+    top:2.5vh;
+    left:5.5vw;
+    border-bottom: 100px solid transparent;
+    border-left: 100px solid red;
+    z-index: -1;
+}
+.asaAviao2{
+    position: absolute;
+    top:-13.5vh;
+    left:5.5vw;
+    border-top: 100px transparent solid;
+    border-right: 100px solid  transparent;
+    border-bottom: -100px solid;
+    border-left: 100px solid red;
+    z-index: -1;
+}
+.parteBranca{
+    position: absolute;
+    top: 1px;
+    left: 5.1vw;
+    width: 50%;
+    height: 35%;
+    background-color: white;
+    z-index: 1;
+}
+.turbinasAviao1{
+    position: absolute;
+    top:10vh;
+    left:6.8vw;
+    width:3.5vw;
+    height:4.5vh;
+    border-radius: 10px;
+    background-color: white;
+    z-index: -2;
+}
+.turbinasAviao2{
+    position: absolute;
+    top:-10vh;
+    left:6.6vw;
+    width:3.5vw;
+    height:4.5vh;
+    border-radius: 10px;
+    background-color: white;
+    z-index: -2;
+}
+.meioTurbinasAviao1{
+    position: absolute;
+    top: 10.7vh;
+    left: 9.8vw;
+    width: 0.5vw;
+    height: 3vh;
+    border-radius: 0px 10px 10px 0px;
+    background-color: black;
+}
+.meioTurbinasAviao2{
+    position: absolute;
+    top: -9.4vh;
+    left: 9.6vw;
+    width: 0.5vw;
+    height: 3vh;
+    border-radius: 0px 10px 10px 0px;
+    background-color: black;
+}
+.paraBrisaAviao{
+    position: absolute;
+    top:-4vh;
+    left: 28vh;
+    width: 3vw;
+    height: 5vh;
+    border-radius: 0px 100px 0px 0px;
+    background-color: aqua;
+    z-index: 10;
+}
+.janelasAviao1{
+    position: absolute;
+    top:-1.3vh;
+    left:1.1vw;
+    width:1.1vw;
+    height:2vh;
+    border-radius: 100%;
+    background-color: aqua;
+    z-index: 1;
+}
+.janelasAviao2{
+    position: absolute;
+    top:-1.3vh;
+    left:3vw;
+    width:1.1vw;
+    height:2vh;
+    border-radius: 100%;
+    background-color: aqua;
+    z-index: 1;
+}
+.janelasAviao3{
+    position: absolute;
+    top:-1.3vh;
+    left:5vw;
+    width:1.1vw;
+    height:2vh;
+    border-radius: 100%;
+    background-color: aqua;
+    z-index: 1;
+}
+.janelasAviao4{
+    position: absolute;
+    top:-1.3vh;
+    left:7vw;
+    width:1.1vw;
+    height:2vh;
+    border-radius: 100%;
+    background-color: aqua;
+    z-index: 1;
+}
+.janelasAviao5{
+    position: absolute;
+    top:-1.3vh;
+    left:9vw;
+    width:1.1vw;
+    height:2vh;
+    border-radius: 100%;
+    background-color: aqua;
+    z-index: 1;
+}
+.janelasAviao6{
+    position: absolute;
+    top:-1.3vh;
+    left:11vw;
+    width:1.1vw;
+    height:2vh;
+    border-radius: 100%;
+    background-color: aqua;
+    z-index: 1;
+}
+.caudaVertical{
+    position: absolute;
+    top:-11vh;
+    border-left: 70px solid white;
+    border-bottom: -100px solid transparent;
+    border-top: 40px solid transparent;
+    z-index: -2;
+}
+.caudaHorizontal{
+    position: absolute;
+    top:-4.6vh;
+    border-left: 70px solid red;
+    border-bottom: 20px solid transparent;
+    
+}
+.onibus{
+ position: absolute;
+ background-color: yellow;
+ top:-9.5vh;
+ left: 45px;
+ width:10vw;
+ height:10vh;
+ border-radius: 6px;
+ border: 1px solid;
+ z-index: 1;
+
+}
+section p{
+    position: absolute;
+    top:35px;
+    left:31px;
+    font-size: 14px;
+}
+.rodasOnibus1{
+    position: absolute;
+    border-radius: 100%;
+    background-color: black;
+    width: 30px;
+    height: 30px;
+    top:40px;
+}
+.meioRoda1{
+    position: absolute;
+    border-radius: 100%;
+    background-color: #ffffff;
+    width: 15px;
+    height: 15px;
+    top: 7px;
+    left: 6.5px;
+}
+.rodasOnibus2{
+    position: absolute;
+    border-radius: 100%;
+    background-color: black;
+    left: 100px;
+    width: 30px;
+    height: 30px;
+    top:40px;
+    z-index: 2;
+
+}
+.meioRoda2{
+    position: absolute;
+    border-radius: 100%;
+    background-color: #ffffff;
+    width: 15px;
+    height: 15px;
+    top: 7px;
+    left:6.5px;
+}
+.frenteOnibus{
+    position: absolute;
+    width:15px;
+    height:35px;
+    top:25px;
+    left:132px;
+    background-color: yellow;
+    border-radius: 0px 5px 5px 0px;
+    border-top: 0.5px solid;
+    border-right: 1px solid;
+}
+.farol{
+    position: relative;
+    width: 4px;
+    height: 10px;
+    background-color: beige;
+    top:5px;
+    left:12px;
+    border-radius: 0px 5px 5px 0px;
+}
+.janelasOnibus1{
+    position: absolute;
+    width:20px;
+    height:20px;
+    background-color: aqua;
+    top:5px;
+    left: 5px;
+    border-radius:5px;
+}
+.janelasOnibus2{
+    position: absolute;
+    width:20px;
+    height:20px;
+    background-color: aqua;
+    top:5px;
+    left: 35px;
+    border-radius: 5px;
+}
+.janelasOnibus3{
+    position: absolute;
+    width:20px;
+    height:20px;
+    background-color: aqua;
+    top:5px;
+    left: 65px;
+    border-radius: 5px;
+}
+.paraBrisa{
+    position: absolute;
+    top:5px;
+    left: 105px;
+    border-radius: 5px;
+    width:30px;
+    height:20px;
+    background-color: aqua;
+}
+.kombi{
+   position: absolute;
+    top:-50px;
+    left: 650px;
+    width:140px;
+    height:50px;
+    background-color: white;
+    border-radius: 10px 10px 2px 2px;
+    border: 1.5px solid;
+
+
+}
+.janelaKombi1{
+    position: absolute;
+    top:5px;
+    left:5px;
+    width:32px;
+    height:20px;
+    border-radius: 10px;
+    background-color: aqua;
+}
+.janelaKombi2{
+    position: absolute;
+    top:5px;
+    left:42px;
+    width:32px;
+    height:20px;
+    border-radius: 10px;
+    background-color: aqua;
+}
+.janelaKombi3{
+    position: absolute;
+    top:5px;
+    left:92px;
+    width:45px;
+    height:20px;
+    border-radius: 10px;
+    background-color: aqua;
+}
+.portaKombi{
+    position: absolute;
+    width:35px;
+    height: 22.5px;
+    border: 2px solid;
+    top: 26px;
+    left:55px;
+}
+.Maçaneta{
+    position: absolute;
+    top: 30px;
+    width: 5px;
+    height: 5px;
+    left: 80px;
+    border-radius: 100%;
+    background-color: black;
+}
+.rodasKombi1{
+    position: absolute;
+    border-radius: 100%;
+    background-color: black;
+    width: 25px;
+    height: 25px;
+    top:34.5px;
+    left:4.5px;
+}
+.rodasKombi2{
+    position: absolute;
+    border-radius: 100%;
+    background-color: black;
+    width: 25px;
+    height: 25px;
+    top:34.5px;
+    left:105px
+}
+.meioRodaK1{
+    position: absolute;
+    border-radius: 100%;
+    background-color: #ffffff;
+    width: 12px;
+    height: 12px;
+    top: 40.5px;
+    left:10px;
+    z-index: 1;
+}
+.meioRodaK2{
+    position: absolute;
+    border-radius: 100%;
+    background-color: #ffffff;
+    width: 12px;
+    height: 12px;
+    top: 40.5px;
+    left:111px;
+    z-index: 1;
+}
+.farolK{
+    position:absolute;
+    width: 5px;
+    height: 12px;
+    top: 30px;
+    border-radius: 0px 10px 10px 0px;
+    left:136px;
+    background-color: white;
+    z-index: 1;
+}
+.fusca{
+    position: absolute;
+    left:85vw;
+    top:-2.2vh;
+    width:85px;
+    height: 50px;
+    border-radius:55px 50px 5px 5px ;
+    background-color: #13007c;
+    border: 1.5px solid;
+}
+.parte1Fusca{
+    position: absolute;
+    width:40px;
+    height: 30px;
+    left:-25px;
+    top:20px;
+    background-color:  #13007c;
+    border-radius: 200px 0px 0px 10px;
+    border-left: solid 1px;
+}
+.parte2Fusca{
+    position: absolute;
+    width:30px;
+    height: 30px;
+    left:75px;
+    top:20px;
+    background-color:  #13007c;
+    border-radius: 10px 200px 10px 10px;
+    border-right: solid 1px;
+}
+.roda1Fusca{
+    position: absolute;
+    top: 32.5px;
+    left:-20.5px;
+    width:28px;
+    height:28px;
+    background-color: black;
+    border-radius: 100%;
+}
+.roda2Fusca{
+    position: absolute;
+    top: 32.5px;
+    left:-1.1vw;
+    width:28px;
+    height:28px;
+    background-color: black;
+    border-radius: 100%;
+}
+.roda1Fusca{
+    position: absolute;
+    top: 30.5px;
+    left:72px;
+    width:28px;
+    height:28px;
+    background-color: black;
+    border-radius: 100%;
+}
+.meioRodaF2{
+    position: absolute;
+    width:20px;
+    height:20px;
+    background-color:transparent;
+    top:36.1px;
+    left:-0.8vw;
+    border-radius: 100% ;
+    border: 3px solid white;
+}
+.meioRodaF1{
+    position: absolute;
+    width:20px;
+    height:20px;
+    background-color:transparent;
+    top:34.5px;
+    left:76px;
+    border-radius: 100% ;
+    border: 3px solid white;
+}
+.janelaFusca{
+    position: absolute;
+    top:5px;
+    left:15px;
+    width:50px;
+    height: 20px;
+    border-radius: 100px 45px 0px 0px;
+    background-color: aqua;
+}
+.portaFusca{
+    position: absolute;
+    width:50px;
+    height: 19.5px;
+    top:29px;
+    left: 15px;
+    border: solid 2.5px;
+}
+.maçanetaFusca{
+    position: absolute;
+    top:32px;
+    left: 55px;
+    width:5.5px;
+    height:5.5px;
+    border-radius: 100%;
+    background-color: black;
+}
+.farolFusca{
+    position: absolute;
+    top:25px;
+    left: -25px;
+    width:15px;
+    height:15px;
+    border-radius: 20px 0px 15px 0px;
+    border:solid;
+    background-color: white;
+    z-index:1;
+}
+.carroEsportivo{
+    position: absolute;
+    top:0.5vh;
+    left:20vw;
+    width: 145px;
+    height: 35px;
+    background-color: red;
+    border: 2px solid;
+    border-radius: 100px 0px 30px 0px;
+}
+.parte1Esportivo{
+    position: absolute;
+    top:-2.5vh;
+    left: 3.1vw;
+    width:55px;
+    height: 15px;
+    border-radius: 200px 0px 50px 0px;
+    background-color:aqua;
+    border-right: 2px solid;
+    border-left: 2px solid;
+    border-top:2px solid;
+}
+.parte2Esportivo{
+    position: absolute;
+    left: 9vw;
+    top: -10px;
+    width: 30px;
+    border-bottom: solid 10px black;
+    border-left:  solid 9px transparent;
+}
+    .roda1Esportivo{
+        position: absolute;
+        top:2vh;
+        left: 1vw;
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        background-color: black;
+    }
+    .meioRodaEsportivo1{
+        position: absolute;
+        top:3vh;
+        left: 1.5vw;
+        width: 15px;
+        height: 15px;
+        border-radius: 100%;
+        background-color: beige;
+    }
+    .roda2Esportivo{
+        position: absolute;
+        top:2vh;
+        left: 7.8vw;
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        background-color: black;
+    }
+    .meioRodaEsportivo2{
+        position: absolute;
+        top:3vh;
+        left: 8.3vw;
+        width: 15px;
+        height: 15px;
+        border-radius: 100%;
+        background-color: beige;
+    }
+    .portaEsportivo{
+        position: absolute;
+        top:0.5vh;
+        left: 3.6vw;
+        width: 55px;
+        height: 26px;
+        border: 2.5px solid;
+    }
+    .maçanetaEsportivo{
+    position: absolute;
+    top:1.1vh;
+    left: 6.5vw;
+    width:5.5px;
+    height:5.5px;
+    border-radius: 100%;
+    background-color: black;
+    }
+    .farolEsportivo{
+        position: absolute;
+        top:1.5vh;
+        width:15px;
+        height:15px;
+        border-radius: 20px 0px 15px 0px;
+        border:solid;
+        background-color: white;
+        z-index:1;
+    }
+    .outroCarro{
+        position: absolute;
+        top: -3.5vh;
+        left: 65vw;
+        width: 7.5vw;
+        height: 10vh;
+        border-radius: 30px 20px 0px 0px;
+        background-color: rgb(66, 4, 117);
+        z-index: 1;
+    }
+    .parte1OutroCarro{
+        position: absolute;
+        top:3.4vh;
+        left:2.3vw;
+        width: 8vw;
+        border-bottom:40px rgb(66, 4, 117) solid;
+        border-right: 20px transparent solid ;
+        z-index: -2;
+    }
+    .parte2OutroCarro{
+        position: absolute;
+        top:3.4vh;
+        left:-4vw;
+        width:5vw;
+        border-left: 40px solid transparent;
+        border-bottom: 40px solid  rgb(66, 4, 117);
+        z-index: -2;
+    }
+    .rodasOutro1{
+        position: absolute;
+        top:6.5vh;
+        left: 6vw;
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        background-color: black;
+    }
+    .rodasOutro2{
+        position: absolute;
+        top:6.5vh;
+        left: -2vw;
+        width: 32px;
+        height: 32px;
+        border-radius: 100%;
+        background-color: black; 
+    }
+    .janelaOutro{
+        position: absolute;
+        top: 0.5vh;
+        left:1vw;
+        width: 5.5vw;
+        height: 3.5vh;
+        border-radius: 20px 5px 2px 2px;
+        background-color: aqua;
+    }
+    .meioRodaOutro1{
+        position: absolute;
+        top:7.8vh;
+        left: -1.40vw;
+        width: 15px;
+        height: 15px;
+        border-radius: 100%;
+        background-color: gold;
+    }
+    .meioRodaOutro2{
+        position: absolute;
+        top:7.7vh;
+        left: 6.54vw;
+        width: 14.5px;
+        height: 14.5px;
+        border-radius: 100%;
+        background-color: gold;
+    }
+    .circuloRodaOutro1{
+        position: absolute;
+        top:6.7vh;
+        left:-1.9vw;
+        width:30px;
+        height: 30px;
+        border: 3.5px solid white;
+        border-radius: 100%;
+    }
+    .circuloRodaOutro2{
+        position: absolute;
+        top:6.7vh;
+        left:6.05vw;
+        width:28px;
+        height: 28px;
+        border: 3px solid white;
+        border-radius: 100%;
+    }
+    .portaOutroCarro{
+        position: absolute;
+        top:4.5vh;
+        left:0.8vw;
+        width: 5vw;
+        height: 5vh;
+        border: solid 2.5px;
+    }
+    .macanetaOutroCarro{
+        position: absolute;
+        top: 5vh;
+        left: 4.9vw;
+        border-radius: 100%;
+        border: solid;
+    }
+    @media(max-width:800px){
+        main{
+            background-image:linear-gradient(to right, white, red)
+        }
+    }

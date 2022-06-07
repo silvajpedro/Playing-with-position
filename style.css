@@ -5,7 +5,7 @@
     
 }
 main{
-    position: absolute;
+    position:fixed;
     z-index: -1;
     background-image: linear-gradient(180deg, #f1610d, #4c07cc);
     border: solid;
@@ -39,13 +39,13 @@ main{
     left: 0.2vw;
     background-color: white;
     border-radius: 0px 0px 10px 100px;
-    animation: airplane 10s ease-in-out 0.1s infinite normal both;
-    transition: ease-in-out 0s;
+    animation: airplane 6.5s ease-in-out 0.1s infinite normal both;
+    transition: ease 0;
 }
 @keyframes airplane {
     0%{
         left: 78%;
-        top: 100px;
+        top: 120px;
         transform: scale(-1,1);
     }
     50%{
@@ -67,14 +67,14 @@ main{
         top: 190px;
     }
     90%{
-        top: 160px;
+        top: 300px;
         left: 75%;
         transform:scale(1,1);
     }
     100%{
         left:78% ;
         transform: scale(-1,1);
-        top: 110px;
+        top: 120px;
     }
     
 
@@ -271,13 +271,21 @@ main{
  position: absolute;
  background-color: yellow;
  top:-9.5vh;
- left: 45px;
  width:10vw;
  height:10vh;
  border-radius: 6px;
  border: 1px solid;
  z-index: 1;
-
+ animation: onibus 6.7s ease 0s infinite normal forwards;
+transition: ease 0s;
+}
+@keyframes onibus {
+  from{
+      left: -40vw;
+  }
+  to{
+      left: 135vw;
+  }
 }
 section p{
     position: absolute;
@@ -387,8 +395,16 @@ section p{
     background-color: white;
     border-radius: 10px 10px 2px 2px;
     border: 1.5px solid;
-
-
+    animation: kombi 10s ease-in-out 0s infinite normal forwards;
+    transition: ease-in-out 0s;
+}
+@keyframes kombi {
+  from{
+      left: -35vw;
+  }
+  to{
+      left: 138vw;
+  }
 }
 .janelaKombi1{
     position: absolute;
@@ -491,7 +507,17 @@ section p{
     border-radius:55px 50px 5px 5px ;
     background-color: #13007c;
     border: 1.5px solid;
-}
+    animation: fusca 15.5s ease-in-out 0s infinite normal forwards;
+    transition: ease-in-out 0s;
+    }
+@keyframes fusca {
+    from{
+        left: 109vw;
+    }
+    to{
+        left: -35vw;
+    }
+  }
 .parte1Fusca{
     position: absolute;
     width:40px;
@@ -605,7 +631,17 @@ section p{
     background-color: red;
     border: 2px solid;
     border-radius: 100px 0px 30px 0px;
-}
+    animation: esportivo 9.5s ease 0s infinite normal forwards;
+    transition: ease 0s;
+    }
+@keyframes esportivo {
+    from{
+        left: 145vw;
+    }
+    to{
+        left: -100vw;
+    }
+  }
 .parte1Esportivo{
     position: absolute;
     top:-2.5vh;
@@ -698,7 +734,17 @@ section p{
         border-radius: 30px 20px 0px 0px;
         background-color: rgb(66, 4, 117);
         z-index: 1;
-    }
+        animation: carroroxo 15s ease 0s infinite normal forwards;
+        transition: ease 0s;
+        }
+    @keyframes carroroxo {
+        from{
+            left: 140vw;
+        }
+        to{
+            left: -80vw;
+        }
+      }
     .parte1OutroCarro{
         position: absolute;
         top:3.4vh;
